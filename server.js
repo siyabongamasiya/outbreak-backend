@@ -6,7 +6,7 @@ const path = require("node:path");
 const app = express();
 const datasetPath = path.join(__dirname, "covid.json");
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://outbreak-wala.onrender.com" }));
 
 app.get("/api/covid", async (req, res) => {
   try {
